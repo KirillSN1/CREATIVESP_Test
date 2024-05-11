@@ -1,0 +1,25 @@
+.article-explanation{
+    font-weight: 600;
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+}
+.article-description{
+    margin: 0px 10px;
+}
+#acticle-features{
+    text-align: center;
+}
+.acticle-features-list{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.article-feature{
+    background: var(--additional-color);
+    padding: 13px;
+    text-align: justify;
+    margin: 0px 10px;
+}

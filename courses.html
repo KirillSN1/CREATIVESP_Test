@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Мінімалізм | CREATIVESP</title>
+        <!-- faavicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/favicon/site.webmanifest">
+        <link href="/styles/main.css" rel="stylesheet"/>
+        <link href="/styles/default-modal.css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+        <script src="/js/main.js" type="module"></script>
+        <script>
+            function register(course){
+                window.course.value = course;
+                regModal.showModal();
+            }
+        </script>
+    </head>
+    <body class="surface">
+        <header class="primary-block">
+            <link contents="/header-layout.html">
+        </header>
+        <main class="main-contents">
+            <h1 class="page-title accent-font">курси</h1>
+            <section id="courses">
+                <div class="info-cards">
+                    <div class="card info-card">
+                        <div class="card-content info-card-content s-accent-bg">
+                            <h3 class="accent-font-family">Фундаментальний дизайн:</h3>
+                            Цей курс охопить основи дизайну, включаючи принципи дизайну, теорію кольорів та типографіку. Ви навчитеся створювати візуально привабливі та інформативні компонування.
+                        </div>
+                        <div class="card-content info-card-arrow-cube" href="/reg.html" onclick="register('design')">
+                            <b>ЗАРЕЄСТРУВАТИСЯ!</b>
+                        </div>
+                    </div>
+                    <div class="card info-card">
+                        <div class="card-content info-card-content s-accent-bg">
+                            <h3 class="accent-font-family">Веб-розробка:</h3>
+                            У цьому курсі ви навчитеся створювати веб-сайти за допомогою HTML, CSS та JavaScript. Ви дізнаєтеся про основи створення веб-сторінок, а також про те, як використовувати передові методи розробки для створення складних та динамічних веб-сайтів.
+                        </div>
+                        <div class="card-content info-card-arrow-cube" href="/reg.html" onclick="register('web-dev')">
+                            <b>ЗАРЕЄСТРУВАТИСЯ!</b>
+                        </div>
+                    </div>
+                    <div class="card info-card">
+                        <div class="card-content info-card-content s-accent-bg">
+                            <h3 class="accent-font-family">UX/UI дизайн:</h3>
+                            Цей курс навчить вас основам UX (User Experience) та UI (User Interface) дизайну. Ви дізнаєтеся, як створювати веб-сайти та програми, які зручні для користувачів та естетично привабливі.
+                        </div>
+                        <div class="card-content info-card-arrow-cube" href="/reg.html" onclick="register('uiux-dev')">
+                            <b>ЗАРЕЄСТРУВАТИСЯ!</b>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-paddings text-center">
+                <a class="main-link accent-color" href="/"><i>На головну</i></a>
+            </section>
+        </main>
+        <dialog id="regModal" class="default-modal">
+            <h5 class="modal-title">Заповніть анкету та відправте її нам, а ми вам передзвонимо!</h5>
+            <form action="/register" method="dialog">
+                <div class="form-fields">
+                    <input hidden id="course"/>
+                    <input required id="name" placeholder="ВАШЕ ІМ’Я"/>
+                    <input required id="surname" placeholder="ПРІЗВИЩЕ"/>
+                    <input required type="tel" id="phone" placeholder="НОМЕР ТЕЛЕФОНУ"/>
+                    <input required type="email" id="email" placeholder="ЕЛЕКТРОННА ПОШТА"/>
+                </div>
+                <div class="form-footer">
+                    <button class="outline-button submit" type="submit"><b>ВІДПРАВИТИ</b></button>
+                </div>
+            </form>
+        </dialog>
+    </body>
+</html>
