@@ -1,0 +1,195 @@
+@import url(./reset.css);
+@import url(./variables.css);
+@import url(./theme.css);
+@import url(../../assets/fonts/mak/Web/MAK.css);
+@import url(./info-card.css);
+html{
+    font-family: Montserrat;
+}
+html>body{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    padding: 16px;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+::placeholder {
+    text-align: center;
+    color: #00000059;
+}
+ /* or, for legacy browsers */
+::-webkit-input-placeholder {
+    text-align: center;
+    color: #00000059;
+}
+:-moz-placeholder { /* Firefox 18- */
+    text-align: center;
+    color: #00000059;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+    text-align: center;
+    color: #00000059;
+}
+:-ms-input-placeholder {
+    text-align: center;
+    color: #00000059;
+}
+header{
+    height: var(--header-height);
+    position: sticky;
+    top:0;
+    z-index: 1;
+}
+.header-contents{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    height: 100%;
+}
+#header-links{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+    font-size: 15px;
+}
+header .title{
+    height: 100%;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+main{
+    flex: 1;
+}
+.link{
+    text-decoration: none;
+}
+.link:hover{
+    color: var(--accent-color);
+    -webkit-text-stroke: 0.05em;
+}
+.link:active{
+    transform: scale(0.98);
+}
+.surface{
+    background: var(--surface-color);
+}
+
+.accent-font-family{
+    font-family: "MakLight";
+}
+.accent-font{
+    font-family: "MakLight";
+    color: var(--accent-color);
+}
+.accent-color{
+    color: var(--accent-color);
+}
+.accent-bg{
+    background: var(--accent-color);
+    color: var(--on-accent-color);
+}
+.s-accent-font{
+    font-family: "MakLight";
+    color: var(--secondary-accent-color);
+}
+.s-accent-color{
+    color: var(--secondary-accent-color);
+}
+.s-accent-bg{
+    background: var(--secondary-accent-color);
+    color: var(--on-secondary-accent-color);
+}
+
+.outline{
+    border: 2px solid var(--outline-color);
+}
+.image-outline{
+    display: flex;
+    height: fit-content;
+    display: flex;
+    border: 2px solid var(--outline-color);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.card{
+    border: 2px solid var(--outline-color);
+    border-radius: 15px;
+    background-color: transparent;
+    overflow: hidden;
+}
+.card-content{
+    padding: 15px;
+}
+.cube{ aspect-ratio: 1 / 1; }
+.stack {
+    display: grid;
+    & > * {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+}
+.main-contents{
+    max-width: 1170px;
+    margin: auto;
+    width: 100%;
+}
+.outline-button{
+    border-radius: 10px;
+    padding: 5px 10px;
+    background: var(--additional-color);
+}
+.outline-button.submit{
+    width: 260px;
+    padding: 13px 20px;
+    border-radius: 20px;
+}
+.flex-columns{
+    display: flex;
+    justify-content: center;
+    gap: 17px;
+}
+.flex-columns>*{
+    width: 50%;
+}
+img[contain]{
+    object-fit: contain;
+}
+.justify-text{
+    text-align: justify;
+}
+.text-center{
+    text-align: center;
+}
+.section-paddings{
+    padding: 34px 0px;
+}
+.margin-auto{
+    margin: auto;
+}
+.main-link{
+    font-weight: 600;
+    text-decoration: underline;
+}
+.page-title{
+    text-align: center;
+    margin: 34px 0px;
+    font-size: 64px;
+    text-transform: lowercase;
+}
+.form-fields{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+}
+.form-footer{
+    margin-top: 65px;
+}

@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+html,body{
+    min-width: 100%;
+    min-height: 100%;
+    margin: 0px;
+    display: flex;
+    align-items: stretch;
+}
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+img{
+    max-height: 100%;
+    max-width: 100%;
+    -webkit-user-drag: none;
+}
+img:not(.selectable){
+    -webkit-user-select: none;
+    user-select: none;
+}
+a{
+    text-decoration: none;
+}
+a,button:hover{
+    cursor: pointer;
+}
+h1,h2,h3,h4,h5{
+    margin-top: 0px;
+}

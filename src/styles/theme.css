@@ -1,0 +1,8 @@
+@import url(theme-colors.css);
+.primary-block{
+    background: var(--primary-color);
+    color: var(--on-primary-color);
+}
+.primary-block a{
+    color: var(--surface-color);
+}

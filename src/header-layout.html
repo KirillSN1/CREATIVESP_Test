@@ -1,0 +1,29 @@
+<div class="header-contents main-contents">
+    <a href="/" class="title">
+        <img title="logo" src="/assets/images/logo.png" />
+        <b><i>creativesp</i></b>
+    </a>
+    <nav id="header-links">
+        <a href="/" class="link">Головна</a>
+        <hr width="1" size="15">
+        <a href="/neobrutalism.html" class="link">Необруталізм</a>
+        <hr width="1" size="15">
+        <a href="/minimalizm.html" class="link">Мінімалізм</a>
+        <hr width="1" size="15">
+        <a href="/skevomorphism.html" class="link">Скевоморфізм</a>
+    </nav>
+</div>
+<script>
+    const nav = document.querySelector("#header-links");
+    const links = nav.querySelectorAll("a");
+    const url = location.href.replace(location.origin,"");
+    links.forEach((link)=>{
+        if(link.getAttribute('href') == url)
+            return link.classList.add('current-link');
+    })
+</script>
+<style>
+    #header-links>.link.current-link{
+        color: var(--accent-color);
+    }
+</style>
