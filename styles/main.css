@@ -171,7 +171,7 @@ img[contain]{
     margin-top: 65px;
 }
 @media (max-width:950px){
-    .page-title{ font-size: 64px; }
+    .page-title{ font-size: 48px; }
     dialog.default-modal{
         padding: 20px 10px !important;
     }
