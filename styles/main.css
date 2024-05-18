@@ -37,35 +37,6 @@ input{
     text-align: center;
     color: #00000059;
 }
-header{
-    height: var(--header-height);
-    position: sticky;
-    top:0;
-    z-index: 1;
-}
-.header-contents{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 30px;
-    height: 100%;
-}
-#header-links{
-    display: flex;
-    justify-content: space-between;
-    gap: 15px;
-    align-items: center;
-    font-size: 15px;
-}
-header .title{
-    height: 100%;
-    font-size: 27px;
-    display: flex;
-    align-items: center;
-    padding: 10px 0px;
-    text-transform: uppercase;
-    font-weight: 900;
-}
 main{
     flex: 1;
 }
@@ -150,6 +121,9 @@ main{
     width: 260px;
     padding: 13px 20px;
     border-radius: 20px;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .flex-columns{
     display: flex;
@@ -169,7 +143,7 @@ img[contain]{
     text-align: center;
 }
 .section-paddings{
-    padding: 34px 0px;
+    padding: 34px 10px;
 }
 .margin-auto{
     margin: auto;
@@ -183,6 +157,9 @@ img[contain]{
     margin: 34px 0px;
     font-size: 64px;
     text-transform: lowercase;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-inline: 10px;
 }
 .form-fields{
     display: flex;
@@ -192,4 +169,10 @@ img[contain]{
 }
 .form-footer{
     margin-top: 65px;
+}
+@media (max-width:950px){
+    .page-title{ font-size: 64px; }
+    dialog.default-modal{
+        padding: 20px 10px !important;
+    }
 }

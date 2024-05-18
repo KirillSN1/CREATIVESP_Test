@@ -1,7 +1,7 @@
 <div class="header-contents main-contents">
     <a href="/" class="title">
         <img title="logo" src="/assets/images/logo.png" />
-        <b><i>creativesp</i></b>
+        <b class="text"><i>creativesp</i></b>
     </a>
     <nav id="header-links">
         <a href="/" class="link">Головна</a>
@@ -23,7 +23,72 @@
     })
 </script>
 <style>
-    #header-links>.link.current-link{
-        color: var(--accent-color);
+header{
+    height: var(--header-height);
+    position: sticky;
+    top:0;
+    z-index: 1;
+}
+.header-contents{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    height: 100%;
+}
+#header-links{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+    font-size: 15px;
+}
+#header-links hr {
+    margin: 0;
+}
+#header-links>.link.current-link{
+    color: var(--accent-color);
+}
+.header-contents .title{
+    height: 100%;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+@media (max-width:800px) {
+    .header-contents .title .text{
+        display: none;
     }
+}
+@media (max-width:630px) {
+    html{
+        --header-height:auto;
+    }
+    #header-links{
+        gap: 5px;
+        row-gap: 15px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        font-size: 13px;
+        width: 100%;
+    }
+    .header-contents{
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .header-contents .title{
+        height: 67px;
+    }
+}
+@media (max-width:456px){
+    #header-links::first-line{
+        color: red;
+    }
+}
 </style>
+<style></style>

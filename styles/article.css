@@ -23,3 +23,35 @@
     text-align: justify;
     margin: 0px 10px;
 }
+.top-banner{
+    height: 200px;
+}
+.top-banner>img{
+    width: 100%;
+    object-fit: cover;
+}
+@media (max-width:950px) {
+    #article-description{
+        padding-inline: 10px;
+    }
+    #article-description>.flex-columns{
+        flex-wrap: wrap;
+    }
+    #article-description>.flex-columns>*{
+        width: revert;
+    }
+    #article-description>.flex-columns>.top-banner{
+        width: 100%;
+    }
+    #article-description>.flex-columns>.top-banner>img{
+        object-position: left;
+    }
+}
+@media (min-width:600px) and (max-width:950px) {
+    #article-description>.flex-columns>.top-banner{
+        /* width: auto;
+        align-self: center; */
+        height: 300px;
+
+    }
+}

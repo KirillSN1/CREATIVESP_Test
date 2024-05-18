@@ -1,0 +1,18 @@
+#courses{
+    padding-inline: 10px;
+}
+@media (max-width:630px) {
+    #courses .info-cards .card-content{
+        padding: 23px;
+    }
+    #courses .info-cards .card-content>h3{
+        font-size: 30px;
+        text-align: center;
+    }
+    #courses .info-card{
+        flex-direction: column;
+    }
+    #courses .info-card .info-card-arrow-cube {
+        min-height: 80px;
+    }
+}
