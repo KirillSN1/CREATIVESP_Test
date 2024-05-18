@@ -15,7 +15,6 @@ export function inject(){
 /** @param {Element} link  */
 export function injectOne(link){
     const url = link.getAttribute('contents');
-    console.log(url);
     fetch(url)
         .then((response)=>response.text())
         .then((data)=>{
